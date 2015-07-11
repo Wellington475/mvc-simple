@@ -13,6 +13,6 @@ if you have not installed, install `composer` ...
 	
 #### Usage
 
-para iniciar o mcv-simple use o comando `composer install`
+to start the MCV-simple use the `composer install` command.
 
 	composer install
