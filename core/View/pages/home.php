@@ -5,8 +5,8 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>MCV - Routing</title>
-		<link rel="stylesheet" type="text/css" href="core/Public/css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="core/Public/css/main.css">
+		<link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="/static/css/main.css">
 	</head>
 	<body>
 		<div class="jumbotron">
@@ -16,7 +16,7 @@
 			</div>
 		</div>
 		<div class="container">
-			<form action="user" method="post">
+			<form action="user/" method="post">
 				<input type="name" name="name" class="form-control" placeholder="Digite seu nome:">
 			</form>
 		</div>
