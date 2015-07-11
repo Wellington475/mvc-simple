@@ -9,7 +9,12 @@
 		private $nameRoutes = [];
 
 		public function __construct($url){
-			$this->url = $url;
+			if($url){
+				$this->url = $url;
+			}
+			else{
+				$this->url = '';
+			}
 		}
 
 		public function get($path, $callback, $name = null){

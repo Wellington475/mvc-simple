@@ -7,8 +7,8 @@
 		<title>
 			MCV - Routing	
 		</title>
-		<link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="/static/css/main.css">
+		<link rel="stylesheet" type="text/css" href="/mvc-simple/public/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="/mvc-simple/public/css/main.css">
 	</head>
 	<body>
 		<div class="jumbotron">

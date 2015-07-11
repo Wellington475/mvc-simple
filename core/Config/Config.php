@@ -20,6 +20,7 @@
 	* Configuration for: Url
 	*/
 	define('URL', 'http://' . $_SERVER['HTTP_HOST'] . dirname($_SERVER['SCRIPT_NAME']));
+	define('URL_DEFAULT', '');
 	
 	/**
 	* Configuration for: Database

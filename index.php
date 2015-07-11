@@ -17,12 +17,22 @@
 		require APP . 'config/config.php';
 	}
 
+	
 	use App\Router\Router as Router;
 	
-	$route = new Router($_GET['url']);
-
+	if(array_key_exists('url', $_GET)){
+		$route = new Router($_GET['url']);
+	}
+	else{
+		$route = new Router(URL_DEFAULT);
+	}
+	
 	$route->get('/', "Posts.home");
-	$route->get('/user/:name', "Posts.show");
+	
+	$route->get('/username/:name', function($name){
+		echo "Hello ".$name;
+	})->with('name','[a-z]+');
+
 	$route->post('/user', "Posts.setName");
 
 	$route->run();

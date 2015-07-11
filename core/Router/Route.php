@@ -9,6 +9,7 @@
 		private $params = [];
 
 		public function __construct($path, $callback){
+			
 			$this->path = trim($path, '/');
 			$this->callback = $callback;
 		}

@@ -4,7 +4,7 @@
 
 	RewriteCond %{REQUEST_FILENAME} !-f
 
-	RewriteRule ^static/([a-z\\\/\.]+)$ core/Public/$1
-	RewriteRule ^([a-z]+)/$ index.php?url=$1 [QSA,L]
+	RewriteRule ^public/([a-z\\\/\.]+)$ core/Public/$1
+	RewriteRule ^([a-zA-Z\/0-9]+)$ index.php?url=$1 [QSA,L]
 
 </IfModule>
