@@ -1,12 +1,10 @@
-Options -Indexes
-
 <IfModule mod_rewrite.c>
 
 	RewriteEngine On
-	RewriteBase /loja_virtual/
 
 	RewriteCond %{REQUEST_FILENAME} !-f
 
-	RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+	RewriteRule ^static/([a-z\\\/\.]+)$ core/Public/$1
+	RewriteRule ^([a-z]+)/$ index.php?url=$1 [QSA,L]
 
 </IfModule>
