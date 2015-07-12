@@ -42,8 +42,9 @@
 
 		public function call(){
 			if(is_string($this->callback)){
-				$params = explode('.', $this->callback);
-				$controller = "App\\Controller\\" . $params[0] . "Controller";
+				$dir = explode('#', $this->callback);
+				$params = explode('.', $dir[1]);
+				$controller = "App\\Apps\\" . $dir[0] . "\\Controller\\" . $params[0] . "Controller";
 
 				$controller = new $controller();
 				$action = $params[1];

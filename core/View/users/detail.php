@@ -13,7 +13,7 @@
 	<body>
 		<div class="jumbotron">
 			<div class="container">
-				<h1>Hello <kbd><?=$data['name']?></kbd>!</h1>
+				<h1>Hello <kbd><?=$data['name'];?></kbd>!</h1>
 				<br>
 			</div>
 		</div>

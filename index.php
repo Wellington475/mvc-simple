@@ -27,12 +27,12 @@
 		$route = new Router(URL_DEFAULT);
 	}
 	
-	$route->get('/', "Posts.home");
+	$route->get('/', "Post#Posts.home");
 	
 	$route->get('/username/:name', function($name){
-		echo "Hello ".$name;
+		echo "<h1>Hello " . $name . "!</h1>";
 	})->with('name','[a-z]+');
 
-	$route->post('/user', "Posts.setName");
+	$route->post('/user', "Post#Posts.setName");
 
 	$route->run();

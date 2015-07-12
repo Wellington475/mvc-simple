@@ -1,8 +1,11 @@
 <?php
-	namespace App\Controller;
+	namespace App\Apps\Post\Controller;
+
+	use App\Controller\Controller as Controller;
 
 	class PostsController extends Controller
 	{
+
 		public function home(){
 			$this->render('pages/home');
 		}
