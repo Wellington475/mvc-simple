@@ -7,6 +7,10 @@
         {
             "name": "Wellington dos Santos",
             "email": "wellington30071997@gmail.com"
+        },
+        {
+            "name": "Renan Palmeira",
+            "email": "renanpalmeira1@hotmail.com"
         }
     ],
     "require-dev": {

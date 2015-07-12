@@ -6,15 +6,18 @@
 	class PostsController extends Controller
 	{
 
-		public function home(){
+		public function home()
+		{
 			$this->render('pages/home');
 		}
 
-		public function show($name){
+		public function show($name)
+		{
 			$this->render('users/detail', ['name'=>$name]);
 		}
 
-		public function setName(){
+		public function setName()
+		{
 			$this->render('users/detail', ['name'=>$_POST['name']]);
 		}
 	}
