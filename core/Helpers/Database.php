@@ -22,6 +22,7 @@
 				die();
 			}
 		}
+		
 		public function close(){
 			$this->pdo = null;
 		}
