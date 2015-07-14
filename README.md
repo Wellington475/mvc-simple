@@ -15,6 +15,7 @@
 ## Requirements
 
 - PHP 5.5.0+
+- Apache Web Server or equivalent with mod rewrite support
 - Database (preferably MySQL)
 - Dependency manager `Composer` installed
 
